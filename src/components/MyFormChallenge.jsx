@@ -13,16 +13,15 @@ function MyForm() {
   return (
   <div>
     <input
-        id="color"
         type="text"
         placeholder="Choose a color"
         value={value}
         onChange={handleChange}
       />
       <div className='container'>
-      {colors.map((color) => (
+      {colors.map((color) => 
           <BoxColor key={color} color={color} value={value} />
-        ))}
+        )}
       </div>
     </div>
   );
